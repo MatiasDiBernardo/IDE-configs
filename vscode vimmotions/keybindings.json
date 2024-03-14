@@ -1,0 +1,46 @@
+[
+    // Change suggestions with tab
+    {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "down",
+    "command": "-selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+    {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "up",
+    "command": "-selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+
+  // Enable tab in vim mode
+  {
+    "key": "tab",
+    "command": "tab",
+    "when": "editorTextFocus && !editorTabMovesFocus && !suggestWidgetMultipleSuggestions"
+  },
+  {
+    "key": "shift+tab",
+    "command": "outdent",
+    "when": "editorTextFocus && !editorTabMovesFocus && !suggestWidgetMultipleSuggestions"
+  },
+
+  // Change file tab (same as gt o gT on vim)
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.previousEditor"
+  }
+
+]
