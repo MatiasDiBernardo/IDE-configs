@@ -8,12 +8,22 @@ return {
         -- Required.
         "nvim-lua/plenary.nvim",
       },
+      keys = {
+          { "<leader>on", "<cmd>ObsidianTemplate note<cr>", desc = "Obs note template" },
+          { "<leader>ol", "<cmd>ObsidianTemplate litrev<cr>", desc = "Obs template literature" },
+      },
       opts = {
         workspaces = {
             {
             name = "Notardas",
             path = "~/Vault/Notardas",
             },
+        },
+        disable_frontmatter = true,
+        templates = {
+            subdir = "Templates",
+            date_format = "%d-%m-%Y",
+            time_format = "%H:%M:%S",
         },
         completion = {
         -- Set to false to disable completion.

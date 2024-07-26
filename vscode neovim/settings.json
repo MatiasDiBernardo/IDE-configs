@@ -27,6 +27,11 @@
   "notebook.output.fontFamily": "Geist Mono",
   "markdown.preview.fontFamily": "Geist Mono",
   "editor.inlayHints.fontFamily": "Geist Mono",
+  "vscode-neovim.compositeKeys": {
+      "kj": {
+          "command": "vscode-neovim.escape",}
+      }
+  },
   
   "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\matia\\AppData\\Local\\nvim-vscode\\init.vim",
   "extensions.experimental.affinity": {

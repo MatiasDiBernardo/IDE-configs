@@ -14,7 +14,7 @@ vim.opt.shiftwidth = 4
 vim.opt.clipboard = "unnamedplus"
 
 -- Limits the scroll (test)
-vim.opt.scrolloff = 999
+-- vim.opt.scrolloff = 999
 
 -- Set leader key
 vim.g.mapleader = " "
@@ -31,4 +31,5 @@ vim.opt.ignorecase = true
 -- For better color managment on the terminal
 vim.opt.termguicolors = true
 
-
+-- For Obsidian Visulization 
+vim.opt_local.conceallevel = 2
